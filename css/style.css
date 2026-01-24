@@ -1848,4 +1848,9 @@ form label {
   border: 0;
 }
 
+/* Increase spacing between timeline items */
+.timeline li + li {
+  margin-top: 130px;
+}
+
 /*# sourceMappingURL=style.css.map */
