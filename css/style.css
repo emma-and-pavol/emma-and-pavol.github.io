@@ -1936,3 +1936,50 @@ html, body { overflow-x: hidden; }
 @media (max-width: 768px) {
   .fh5co-nav .menu-1 { display: none; } /* hides the big desktop menu */
 }
+
+/* ===== Mobile fix for FH5CO timeline ===== */
+@media (max-width: 768px) {
+
+  /* Make the timeline a simple full-width stacked layout */
+  ul.timeline:before {
+    left: 20px !important;        /* move the vertical line to the left */
+  }
+
+  ul.timeline > li {
+    margin-bottom: 30px;
+  }
+
+  ul.timeline > li .timeline-badge {
+    left: 20px !important;        /* align badge with the line */
+    margin-left: 0 !important;
+    top: 20px !important;
+    width: 56px;
+    height: 56px;
+    background-size: cover;
+  }
+
+  ul.timeline > li .timeline-panel {
+    width: calc(100% - 55px) !important;  /* full width minus badge space */
+    float: right !important;
+    margin-left: 55px !important;
+    margin-right: 0 !important;
+  }
+
+  /* Stop arrow pointers from causing overflow */
+  ul.timeline > li .timeline-panel:before,
+  ul.timeline > li .timeline-panel:after {
+    display: none !important;
+  }
+
+  /* Prevent long titles/links from breaking layout */
+  ul.timeline h3,
+  ul.timeline a {
+    word-break: break-word;
+  }
+
+  /* Ensure the timeline content is not hidden behind fixed elements */
+  #section-on-the-day .row-bottom-padded-md {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
