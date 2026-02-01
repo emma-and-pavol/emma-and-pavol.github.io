@@ -1980,3 +1980,31 @@ html, body { overflow-x: hidden; }
     padding-right: 0 !important;
   }
 }
+
+
+/* ===== Couple photo: guaranteed perfect circle on all devices ===== */
+#fh5co-couple .couple-pic-container{
+  width: 280px !important;
+  height: 280px !important;
+  margin: 30px auto 0 !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  display: block !important;
+}
+
+#fh5co-couple .couple-pic-container img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  border-radius: 0 !important; /* prevents weird curve clipping */
+}
+
+/* iPhone sizing */
+@media (max-width: 768px){
+  #fh5co-couple .couple-pic-container{
+    width: 220px !important;
+    height: 220px !important;
+  }
+}
