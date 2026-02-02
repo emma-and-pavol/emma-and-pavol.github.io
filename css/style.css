@@ -2008,3 +2008,18 @@ html, body { overflow-x: hidden; }
     height: 220px !important;
   }
 }
+
+.invite-note {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #888;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* iPhone optimisation */
+@media (max-width: 768px) {
+  .invite-note {
+    font-size: 14px;
+  }
+}
