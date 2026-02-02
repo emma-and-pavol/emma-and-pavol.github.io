@@ -2023,3 +2023,19 @@ html, body { overflow-x: hidden; }
     font-size: 14px;
   }
 }
+
+#fh5co-couple .invite-note{
+  display: block !important;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333 !important;      /* force visible */
+  opacity: 1 !important;       /* some templates fade p tags */
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+  #fh5co-couple .invite-note{
+    font-size: 14px;
+  }
+}
