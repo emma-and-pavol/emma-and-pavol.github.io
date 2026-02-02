@@ -2041,17 +2041,16 @@ html, body { overflow-x: hidden; }
 }
 
 .invite-note {
-  margin-top: 20px;
-  font-size: 14px;
+  margin-top: 18px;
+  font-size: 15px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #777;
 }
 
-/* Mobile tweaks */
+/* Mobile tuning */
 @media (max-width: 768px) {
   .invite-note {
-    font-size: 13px;
-    margin-top: 16px;
+    font-size: 14px;
   }
 }
